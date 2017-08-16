@@ -8,20 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		A9DBC14C1F43CBF1001CD2F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DBC14B1F43CBF1001CD2F5 /* AppDelegate.swift */; };
-		A9DBC14E1F43CBF1001CD2F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DBC14D1F43CBF1001CD2F5 /* ViewController.swift */; };
+		A9DBC14E1F43CBF1001CD2F5 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DBC14D1F43CBF1001CD2F5 /* SignInVC.swift */; };
 		A9DBC1511F43CBF1001CD2F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9DBC14F1F43CBF1001CD2F5 /* Main.storyboard */; };
 		A9DBC1531F43CBF1001CD2F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9DBC1521F43CBF1001CD2F5 /* Assets.xcassets */; };
 		A9DBC1561F43CBF1001CD2F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9DBC1541F43CBF1001CD2F5 /* LaunchScreen.storyboard */; };
+		C2E49A02E33D446242102574 /* Pods_Salt_Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE3ED868BBFC39AC2828D02 /* Pods_Salt_Social.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0DE3ED868BBFC39AC2828D02 /* Pods_Salt_Social.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Salt_Social.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A99B15647CC6E3005463E4E /* Pods-Salt-Social.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Salt-Social.release.xcconfig"; path = "Pods/Target Support Files/Pods-Salt-Social/Pods-Salt-Social.release.xcconfig"; sourceTree = "<group>"; };
+		9FC07E4B12A43C37A1234792 /* Pods-Salt-Social.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Salt-Social.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Salt-Social/Pods-Salt-Social.debug.xcconfig"; sourceTree = "<group>"; };
 		A9DBC1481F43CBF1001CD2F5 /* Salt-Social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Salt-Social.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9DBC14B1F43CBF1001CD2F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A9DBC14D1F43CBF1001CD2F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A9DBC14D1F43CBF1001CD2F5 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		A9DBC1501F43CBF1001CD2F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A9DBC1521F43CBF1001CD2F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9DBC1551F43CBF1001CD2F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9DBC1571F43CBF1001CD2F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9DBC15D1F43CCB7001CD2F5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2E49A02E33D446242102574 /* Pods_Salt_Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +46,8 @@
 			children = (
 				A9DBC14A1F43CBF1001CD2F5 /* Salt-Social */,
 				A9DBC1491F43CBF1001CD2F5 /* Products */,
+				C7C49F315D37DE6F9F15A789 /* Pods */,
+				F61FF2F615E150FF18206AE0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +62,56 @@
 		A9DBC14A1F43CBF1001CD2F5 /* Salt-Social */ = {
 			isa = PBXGroup;
 			children = (
+				A9DBC1601F43E8C0001CD2F5 /* Model */,
+				A9DBC15E1F43E8A5001CD2F5 /* View */,
+				A9DBC15F1F43E8B1001CD2F5 /* Controller */,
 				A9DBC14B1F43CBF1001CD2F5 /* AppDelegate.swift */,
-				A9DBC14D1F43CBF1001CD2F5 /* ViewController.swift */,
 				A9DBC14F1F43CBF1001CD2F5 /* Main.storyboard */,
 				A9DBC1521F43CBF1001CD2F5 /* Assets.xcassets */,
 				A9DBC1541F43CBF1001CD2F5 /* LaunchScreen.storyboard */,
 				A9DBC1571F43CBF1001CD2F5 /* Info.plist */,
+				A9DBC15D1F43CCB7001CD2F5 /* GoogleService-Info.plist */,
 			);
 			path = "Salt-Social";
+			sourceTree = "<group>";
+		};
+		A9DBC15E1F43E8A5001CD2F5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A9DBC15F1F43E8B1001CD2F5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A9DBC14D1F43CBF1001CD2F5 /* SignInVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A9DBC1601F43E8C0001CD2F5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C7C49F315D37DE6F9F15A789 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9FC07E4B12A43C37A1234792 /* Pods-Salt-Social.debug.xcconfig */,
+				9A99B15647CC6E3005463E4E /* Pods-Salt-Social.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F61FF2F615E150FF18206AE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0DE3ED868BBFC39AC2828D02 /* Pods_Salt_Social.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +121,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9DBC15A1F43CBF1001CD2F5 /* Build configuration list for PBXNativeTarget "Salt-Social" */;
 			buildPhases = (
+				AD6BA29280BAD54168790682 /* [CP] Check Pods Manifest.lock */,
 				A9DBC1441F43CBF1001CD2F5 /* Sources */,
 				A9DBC1451F43CBF1001CD2F5 /* Frameworks */,
 				A9DBC1461F43CBF1001CD2F5 /* Resources */,
+				CF178B3D5511973A18549B0B /* [CP] Embed Pods Frameworks */,
+				26463B557C8CA122D11B6811 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,12 +183,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		26463B557C8CA122D11B6811 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Salt-Social/Pods-Salt-Social-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD6BA29280BAD54168790682 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CF178B3D5511973A18549B0B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Salt-Social/Pods-Salt-Social-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A9DBC1441F43CBF1001CD2F5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9DBC14E1F43CBF1001CD2F5 /* ViewController.swift in Sources */,
+				A9DBC14E1F43CBF1001CD2F5 /* SignInVC.swift in Sources */,
 				A9DBC14C1F43CBF1001CD2F5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +372,7 @@
 		};
 		A9DBC15B1F43CBF1001CD2F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FC07E4B12A43C37A1234792 /* Pods-Salt-Social.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Salt-Social/Info.plist";
@@ -284,6 +386,7 @@
 		};
 		A9DBC15C1F43CBF1001CD2F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A99B15647CC6E3005463E4E /* Pods-Salt-Social.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Salt-Social/Info.plist";
